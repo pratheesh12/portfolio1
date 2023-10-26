@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Management System</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<script>
+  // JavaScript function to toggle lesson visibility
+  function toggleLessons(courseId) {
+    var lessons = document.getElementById(courseId + '-lessons');
+    if (lessons.style.display === 'block') {
+      lessons.style.display = 'none';
+    } else {
+      lessons.style.display = 'block';
+    }
+  }
+</script>
+<body>
+
+  <header>
+    <h1>Learning Management System</h1>
+  </header>
+
+  <main>
+    <div id="home">
+      <h1>Welcome to Our Learning Management System</h1>
+      <img src="Best-Programming-Courses.jpg" alt="Programming Image" width="800">
+      <p>Explore our programming courses and boost your coding skills!</p>
+    </div>
+
+    <div id="courses">
+      <h1>Programming Courses</h1>
+      <ul>
+        <li>
+          <a href="javascript:void(0);" onclick="toggleLessons('python-fundamentals')">Python Fundamentals</a>
+          <div id="python-fundamentals-lessons" style="display: none;">
+            <h2>Course Lessons</h2>
+            <ul>
+              <li><a href="https://youtu.be/PrLRGf4Hqqc?si=UW9pTWdEwJwGVUAr">Lesson 1: Introduction to Python</a></li>
+              <li><a href="https://youtu.be/Rtmgt2Qfqr4?si=bLwJqHeYVRF28Sxz">Lesson 2: Python Data Types</a></li>
+              <li><a href="https://youtu.be/Gb1oZy6kAWA?si=cCOSKrZROdEO8Uk5">Lesson 3: Python Functions</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <hr>
+          <a href="javascript:void(0);" onclick="toggleLessons('javascript-basics')">JavaScript Basics</a>
+          <div id="javascript-basics-lessons" style="display: none;">
+            <h2>Course Lessons</h2>
+            <ul>
+              <li><a href="https://youtu.be/poo0BXryffI?si=azMmdQtOuCDOg8o_">Lesson 1: Introduction to JavaScript</a></li>
+              <li><a href="https://youtu.be/Z5ZUZvTAVkg?si=Cf3N_xoHStw_wLMV">Lesson 2: JavaScript Variables</a></li>
+              <li><a href="https://youtu.be/7woUGy9G9DU?si=F6e0NGBGwFa2OO8i">Lesson 3: JavaScript Functions</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <hr>
+          <a href="javascript:void(0);" onclick="toggleLessons('web-development')">Web Development with HTML/CSS</a>
+          <div id="web-development-lessons" style="display: none;">
+            <h2>Course Lessons</h2>
+            <ul>
+              <li><a href="https://youtu.be/pfrLPwR3i80?si=uxWeDmQnMxvg70fW">Lesson 1: Introduction to Web Development</a></li>
+              <li><a href="https://youtu.be/FYErehuSuuw?si=VoSkJ1c1sSSEI_MQ">Lesson 2: HTML Basics</a></li>
+              <li><a href="https://youtu.be/vfs1wBDoqBY?si=ymiOnUdGNdkZGbT5">Lesson 3: CSS Styling</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <form action="process_form.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2023 Learning Management System</p>
+  </footer>
+
+</body>
+</html>

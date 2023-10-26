@@ -1,0 +1,186 @@
+/* Reset some default styles */
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the course and lesson lists */
+#courses,
+#lessons {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Style the links */
+a {
+    text-decoration: none;
+    color: #0078d4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+/* Style the courses section */
+#courses {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #courses h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #courses ul {
+    list-style: none;
+  }
+  
+  #courses li {
+    margin-bottom: 10px;
+  }
+  
+  #courses a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+  }
+  
+  #courses a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the lessons section */
+  #lessons {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #lessons h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #lessons ul {
+    list-style: none;
+  }
+  
+  #lessons li {
+    margin-bottom: 10px;
+  }
+  
+  #lessons a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+  }
+  
+  #lessons a:hover {
+    text-decoration: underline;
+  }
+/* Style the contact form container */
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Style form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style form input fields and textarea */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Style the submit button on hover */
+  button[type="submit"]:hover {
+    background-color: #005bb8;
+  }
+  
+  /* Style form validation messages (optional) */
+  input:required:invalid, textarea:required:invalid {
+    border-color: #ff0000;
+  }
+  
+  /* Style form validation messages (optional) */
+  input:required:valid, textarea:required:valid {
+    border-color: #00cc00;
+  }
+    
